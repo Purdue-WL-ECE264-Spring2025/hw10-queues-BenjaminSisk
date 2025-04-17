@@ -4,6 +4,7 @@
 #include <stdlib.h>
 
 int main(int argc, char **argv) {
+
   if (argc < 2) {
     fprintf(stderr, "Usage: %s [test file]\n", argv[0]);
     exit(1);
@@ -14,6 +15,14 @@ int main(int argc, char **argv) {
     fprintf(stderr, "Failed to open input file %s\n", argv[1]);
     exit(2);
   }
+
+  //struct linked_list list;
+  //list.head = NULL;
+  //insert_at_head(&list, 43);
+  //printf("%zu", remove_from_tail(&list));
+  //free_list(list);
+  //list.head = NULL;
+  //dump_list(fp, list);
 
   int expected;
   fscanf(fp, "%d", &expected);
